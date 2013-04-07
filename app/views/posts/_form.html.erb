@@ -1,0 +1,14 @@
+<%= link_to 'Back', user_posts_path(@user) %>
+
+<%= form_for [@user, @post] do |f| %>
+  <div>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+  <div>
+    <%= f.label :body %>
+    <%= f.text_area :body %>
+  </div>
+  <div><%= f.submit %></div>
+<% end %>
+
