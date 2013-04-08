@@ -21,8 +21,12 @@ table {
   margin: 20px 0;
 }
 
-td {
+td, th {
   padding: 5px 10px;
+}
+
+th {
+  text-align: left;
 }
 
 form {
@@ -41,3 +45,4 @@ form label {
 textarea, input[type=text] {
   width: 400px;
 }
+
