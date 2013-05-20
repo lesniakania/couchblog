@@ -2,6 +2,8 @@ class Post < CouchRest::Model::Base
   property :title, String
   property :body, String
 
+  timestamps!
+
   belongs_to :user
 
   design do
