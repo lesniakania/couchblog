@@ -3,8 +3,6 @@ class User < CouchRest::Model::Base
 
   timestamps!
 
-  collection_of :posts
-
   design do
     view :all
     view :by_email
