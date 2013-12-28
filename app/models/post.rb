@@ -9,6 +9,7 @@ class Post < CouchRest::Model::Base
   design do
     view :all
     view :by_user_id_and__id
+    view :by_user_id
 
     filter :for_user, "function(doc, req) {
       if(doc._deleted) {
