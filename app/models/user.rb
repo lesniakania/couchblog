@@ -1,12 +1,12 @@
-class User < CouchRest::Model::Base
-  property :email, String
+class User < Couchbase::Model
+  attribute :email
+
+  channels ['public']
 
   timestamps!
 
-  design do
-    view :all
-    view :by_email
-  end
+  view :all
+  view :by_email
 
   def posts
     Post.by_user_id.key(self.id)

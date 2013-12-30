@@ -2,7 +2,8 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.11'
 
-gem 'couchrest_model', :git => 'https://github.com/couchrest/couchrest_model.git'
+gem 'couchbase'
+gem 'couchbase-model'
 
 # Gems used only for assets and not required
 # in production environments by default.

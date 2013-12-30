@@ -39,10 +39,10 @@ class PostsController < ApplicationController
   private
 
   def load_user
-    @user = User.get(params[:user_id])
+    @user = User.find_by_id(params[:user_id])
   end
 
   def load_post
-    @post = Post.by_user_id_and__id.key([params[:user_id], params[:id]]).first
+    @post = Post.find_by_id(params[:id])
   end
 end
